@@ -1,8 +1,25 @@
-int ft_isalpha(int c)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/28 12:36:28 by tvilella          #+#    #+#             */
+/*   Updated: 2021/08/28 12:37:23 by tvilella         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+int	ft_isalpha(int c)
 {
-    if (c < 'A') return (0);
-    if (c > 'Z') 
-        if (c < 'a') return (0);
-    if (c > 'z') return (0);
-    return (1);
+	if (c < 'A')
+		return (0);
+	if (c > 'Z')
+		if (c < 'a')
+			return (0);
+	if (c > 'z')
+		return (0);
+	return (1);
 }
