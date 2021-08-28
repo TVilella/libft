@@ -6,7 +6,7 @@
 /*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 16:55:45 by tvilella          #+#    #+#             */
-/*   Updated: 2021/08/28 17:20:12 by tvilella         ###   ########.fr       */
+/*   Updated: 2021/08/28 17:26:22 by tvilella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	len;
 
 	len = 0;
-	while(*(s + len) != '\0')
+	while (*(s + len) != '\0')
 	{
 		len++;
 	}
