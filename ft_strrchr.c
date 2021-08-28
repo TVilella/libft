@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/28 12:39:01 by tvilella          #+#    #+#             */
-/*   Updated: 2021/08/28 20:31:34 by tvilella         ###   ########.fr       */
+/*   Created: 2021/08/28 20:31:37 by tvilella          #+#    #+#             */
+/*   Updated: 2021/08/28 20:34:09 by tvilella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <stdlib.h>
+#include "libft.h"
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
-size_t	ft_strlen(const char *s);
-char	*ft_strchr(const char *s, int c);
-char	*ft_strrchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c)
+{
+	size_t	length;
 
-#endif
+	length = ft_strlen(s) - 1;
+	if (c == '\0')
+		return (*(s + length));
+	while (length > 0)
+	{
+		if (*(s + length) == c)
+			return (*(s + length));
+		length--;
+	}
+	return (NULL);
+}
