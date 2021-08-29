@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/28 12:39:01 by tvilella          #+#    #+#             */
-/*   Updated: 2021/08/28 21:13:30 by tvilella         ###   ########.fr       */
+/*   Created: 2021/08/28 21:03:34 by tvilella          #+#    #+#             */
+/*   Updated: 2021/08/28 21:14:41 by tvilella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <stdlib.h>
+#include "libft.h"
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
-size_t	ft_strlen(const char *s);
-char	*ft_strchr(const char *s, int c);
-char	*ft_strrchr(const char *s, int c);
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
+{
+	size_t	index;
 
-#endif
+	while (*(s1 + index) == *(s2 + index) && index <= n)
+	{
+		if (*(s1 + index) == '\0')
+			return (0);
+		index++;
+	}
+	return (*(s1 + index) - *(s2 + index));
+}
