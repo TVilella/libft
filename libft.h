@@ -6,7 +6,7 @@
 /*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:39:01 by tvilella          #+#    #+#             */
-/*   Updated: 2021/08/29 18:45:38 by tvilella         ###   ########.fr       */
+/*   Updated: 2021/08/29 18:48:37 by tvilella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 
 #endif
