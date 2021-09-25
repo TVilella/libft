@@ -6,7 +6,7 @@
 /*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:39:01 by tvilella          #+#    #+#             */
-/*   Updated: 2021/08/29 20:17:53 by tvilella         ###   ########.fr       */
+/*   Updated: 2021/09/24 21:19:57 by tvilella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);	
 
 #endif
