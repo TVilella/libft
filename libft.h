@@ -6,7 +6,7 @@
 /*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:39:01 by tvilella          #+#    #+#             */
-/*   Updated: 2021/09/25 22:08:32 by tvilella         ###   ########.fr       */
+/*   Updated: 2021/09/25 22:32:39 by tvilella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,6 @@ void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);	
 void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+
 #endif
