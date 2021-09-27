@@ -6,7 +6,7 @@
 /*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:53:10 by tvilella          #+#    #+#             */
-/*   Updated: 2021/08/28 12:56:14 by tvilella         ###   ########.fr       */
+/*   Updated: 2021/09/26 21:11:26 by tvilella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 int	ft_isalnum(int c)
 {
 	if (!ft_isalpha(c))
-		return (0);
-	if (!ft_isdigit(c))
-		return (0);
+	{
+		if (!ft_isdigit(c))
+			return (0);
+	}
 	return (1);
 }
