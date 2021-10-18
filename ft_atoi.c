@@ -6,13 +6,13 @@
 /*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/17 20:42:55 by tvilella          #+#    #+#             */
-/*   Updated: 2021/10/17 21:14:18 by tvilella         ###   ########.fr       */
+/*   Updated: 2021/10/17 21:20:10 by tvilella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	nbr;
 	int	sig;
