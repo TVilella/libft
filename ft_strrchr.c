@@ -6,7 +6,7 @@
 /*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 20:31:37 by tvilella          #+#    #+#             */
-/*   Updated: 2021/08/28 20:34:09 by tvilella         ###   ########.fr       */
+/*   Updated: 2021/10/17 23:16:35 by tvilella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@ char	*ft_strrchr(const char *s, int c)
 {
 	size_t	length;
 
-	length = ft_strlen(s) - 1;
-	if (c == '\0')
-		return (*(s + length));
+	length = ft_strlen(s);
+	if (c == 0)
+		return ((char *)(s + length));
 	while (length > 0)
 	{
-		if (*(s + length) == c)
-			return (*(s + length));
 		length--;
+		if (*(s + length) == (unsigned char)c)
+			return ((char *)(s + length));
 	}
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/17 20:42:55 by tvilella          #+#    #+#             */
-/*   Updated: 2021/10/17 21:20:10 by tvilella         ###   ########.fr       */
+/*   Updated: 2021/10/17 22:48:24 by tvilella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ int	ft_atoi(const char *str)
 
 	nbr = 0;
 	sig = 1;
-	while (*str >= '\t' && *str <= '\r' || *str == ' ')
+	while ((*str >= '\t' && *str <= '\r') || *str == ' ')
 		str++;
 	if (*str == '-' || *str == '+')
 	{
-		if (*str == '+')
+		if (*str == '-')
 			sig = -1;
 		str++;
 	}
