@@ -6,7 +6,7 @@
 /*   By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 22:19:53 by tvilella          #+#    #+#             */
-/*   Updated: 2021/09/25 22:32:38 by tvilella         ###   ########.fr       */
+/*   Updated: 2021/10/17 23:34:27 by tvilella         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	index = 0;
 	while (index < n)
 	{
-		if (p_s1 != p_s2)
-			return (p_s1 - p_s2);
+		if (*(p_s1 + index) != *(p_s2 + index))
+			return (*(p_s1 + index) - *(p_s2 + index));
+		index++;
 	}
 	return (0);
 }
