@@ -59,4 +59,6 @@ dkms.conf
 # Teste Files
 main*.c
 
+libftTester
+
 # End of https://www.toptal.com/developers/gitignore/api/c
