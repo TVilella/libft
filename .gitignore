@@ -60,5 +60,5 @@ dkms.conf
 main*.c
 
 libftTester
-
+libft-war-machine
 # End of https://www.toptal.com/developers/gitignore/api/c
