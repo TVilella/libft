@@ -6,7 +6,7 @@
 #    By: tvilella <tvilella@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/17 21:35:31 by tvilella          #+#    #+#              #
-#    Updated: 2021/10/30 19:06:54 by tvilella         ###   ########.fr        #
+#    Updated: 2021/10/30 21:36:30 by tvilella         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,17 +34,14 @@ NAME	= libft.a
 $(NAME):	$(OBJS)
 			ar rcs $(NAME) $(OBJS)
 
-bonus:		$(OBJS_BN)
-			ar rcs $(NAME) $(OBJS_BN)
-
 all:		$(NAME)
 
 clean:
-			$(RM) $(OBJS) $(OBJS_BN)
+			$(RM) $(OBJS)
 
 fclean:		clean
 			$(RM) $(NAME)
 
 re:			fclean all
 
-.PHONY:		all clean fclean re bonus
+.PHONY:		all clean fclean re
