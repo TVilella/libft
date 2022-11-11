@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
 # endif
@@ -53,5 +54,11 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	*get_next_line(int fd);
+int		ft_printf(const char *str, ...);
+int		ft_printnbr(int n);
+int		ft_printstr(char *str);
+int		ft_printuint(unsigned int num);
+int		ft_printhex(unsigned long long num, int lower);
+int		ft_printpointer(unsigned long long ptr);
 
 #endif
